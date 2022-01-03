@@ -6,5 +6,3 @@ Future improvements:
 -expand functionality to also track movies, TV shows, video games
 -add thumbnails to showcase each piece of content added (APIs?)
 -personal rating system???
-
-HAPPY NEW YEAR! 2022!!!
