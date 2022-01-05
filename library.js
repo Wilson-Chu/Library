@@ -13,6 +13,10 @@ function addBookToLibrary(book) {
   myLibrary.push(book);
 }
 
+function getTitle(myLibArr) {
+  return myLibArr.title;
+}
+
 const book1 = new Book("The Hobbit", "J.R.R. Tolkien", 295, "not read yet");
 const book2 = new Book("Willy Wonka and the Chocolate Factory", "Roald Dahl", 227, "read");
 const book3 = new Book("Principles", "Ray Dalio", 555, "read");
@@ -21,5 +25,5 @@ addBookToLibrary(book2);
 addBookToLibrary(book3);
 
 for (let i = 0; i < myLibrary.length; i++) {
-  console.log(myLibrary[i].title);
+  console.log(getTitle(myLibrary[i]));
 }
