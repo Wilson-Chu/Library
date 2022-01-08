@@ -6,4 +6,4 @@ Future improvements:
 -expand functionality to also track movies, TV shows, video games, subscription services (Netflix, Spotify, Crave, etc.)
 -add thumbnails to showcase each piece of content added (APIs?)
 -personal rating system for content???
--long-future: search functionality from a database
+-long-future: search functionality from an existing database (API?)
