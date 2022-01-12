@@ -13,9 +13,13 @@ h1, div {
     color: white;
     background-color: green;
     align-items: center;
+    border-radius: 20px;
+    transition: 0.25s;
 }
 
 .addBtn:hover {
     background-color: rgb(66, 163, 66);
+    font-weight: bold;
     cursor: pointer;
+    transition: all 0.25s;
 }
