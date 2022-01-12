@@ -13,6 +13,7 @@ function addBookToLibrary(book) {
   myLibrary.push(book);
 }
 
+// getter function even necessary here? will need for each element...
 function getTitle(myLibArr) {
   return myLibArr.title;
 }
@@ -24,6 +25,7 @@ addBookToLibrary(book1);
 addBookToLibrary(book2);
 addBookToLibrary(book3);
 
+// will getters be necessary?
 for (let i = 0; i < myLibrary.length; i++) {
   console.log(getTitle(myLibrary[i]));
 }
