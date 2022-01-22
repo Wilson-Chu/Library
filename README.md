@@ -7,4 +7,4 @@ Future improvements:
 -add thumbnails to showcase each piece of content added (openlibrary/Cover API for this?)
 -personal rating system for content vs. aggregrated reviews like Google Reviews/IMBD/Rotten Tomatoes/MAL/etc. (APIs???)
 -long-future: search functionality from an existing database (openlibrary/Search API?)
--add OAuth for account with local storage option
+-add OAuth for account with local storage option (how to?)
