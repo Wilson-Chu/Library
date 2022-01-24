@@ -25,7 +25,7 @@ addBookToLibrary(book1);
 addBookToLibrary(book2);
 addBookToLibrary(book3);
 
-// will getters be necessary?
+// are getters be necessary?
 for (let i = 0; i < myLibrary.length; i++) {
   console.log(getTitle(myLibrary[i]));
 }
