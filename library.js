@@ -1,5 +1,6 @@
 let myLibrary = [];
 
+// would closures be better here?
 function Book(title, author, numPages, read) {
   // the constructor...
   this.title = title;
