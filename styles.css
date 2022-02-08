@@ -127,21 +127,21 @@ button:focus {
 /* Modal popup box  https://www.w3schools.com/howto/howto_css_modals.asp */
 
 /* The Modal (background) */
-input#title {
+input #title {
     height: 30px;
     width: 200px;
     font-size: 20px;
     border: solid 3px black;
 }
 
-input#author {
+input #author {
     height: 30px;
     width: 200px;
     font-size: 20px;
     border: solid 3px black;
 }
 
-input#pages {
+input #pages {
     height: 30px;
     width: 200px;
     font-size: 20px;
