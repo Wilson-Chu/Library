@@ -60,7 +60,7 @@ let myLibrary = [];
 let newBook;
 
 function addBookToLibrary() {
-  event.preventDefault();
+  //event.preventDefault();
   popUpForm.style.display = 'none';
 
   newBook = new Book(title, author, pages, read);

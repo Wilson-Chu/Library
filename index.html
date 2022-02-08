@@ -17,13 +17,13 @@
     <button id="newBtn"> + Add New Book</button>
   </div>
   <div id="popUp">
-    <form id='form' action='/library.js'>
+    <form id='form' action='/library.js' method='post'>
       <span class="close">&times;</span>
       <legend>Add New Book</legend>
       <div id='textInput'>
-        <p><input type='text' id='title' name='title' placeholder='Title'></p>
-        <p><input type='text' id='author' name='author' placeholder='Author'></p>
-        <p><input type='text' id='pages' name='pages' placeholder='Pages'></p>
+        <p><input type='text' id='title' name='title' placeholder='Title' required></p>
+        <p><input type='text' id='author' name='author' placeholder='Author' required></p>
+        <p><input type='number' id='pages' name='pages' placeholder='Pages' required min='0'></p>
       </div>
       <div id='checkBox'>
         <p><label>Read: </label><input type='checkbox' id='read' name='read' value='yes'></p>
