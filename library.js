@@ -50,7 +50,7 @@ class Book {
   constructor(title, author, pages, read) {
     this.title = form.title.value;
     this.author = form.author.value;
-    this.pages = form.pages.value + ' pg';
+    this.pages = form.pages.value + ' pages';
     this.read = form.read.checked;
   }
 }
@@ -70,7 +70,7 @@ function addBookToLibrary() {
   form.reset();
 }
 
-//Creates book visual in browser
+// Creates cards UI
 function render() {
   const display = document.getElementById('Library-container');
   const books = document.querySelectorAll('.book');
@@ -81,7 +81,7 @@ function render() {
   }
 }
 
-//creats book DOM elements, to use in render();
+// Creates Book DOM elements, to use in render();
 function createBook(item) {
   const library = document.querySelector('#Library-container');
   const bookDiv = document.createElement('div');
@@ -111,10 +111,10 @@ function createBook(item) {
   bookDiv.appendChild(readBtn);
   if (item.read === false) {
     readBtn.textContent = 'Not Read';
-    readBtn.style.backgroundColor = '#e04f63';
+    readBtn.style.backgroundColor = '#fa2840';
   } else {
     readBtn.textContent = 'Read';
-    readBtn.style.backgroundColor = '#63da63'
+    readBtn.style.backgroundColor = '#47e62c';
   }
 
   removeBtn.textContent = 'Remove';
