@@ -37,7 +37,6 @@ for (let i = 0; i < myLibrary.length; i++) {
 
 /* START OF NEW VERSION, MUST ADJUST AS REQUIRED! */
 // Data Structures
-
 class Book {
   constructor(
     title = 'Unknown',
@@ -276,7 +275,7 @@ const restoreLocal = () => {
 }
 
 // Auth
-
+/*
 const auth = firebase.auth()
 const logInBtn = document.getElementById('logInBtn')
 const logOutBtn = document.getElementById('logOutBtn')
@@ -320,7 +319,7 @@ const setupRealTimeListener = () => {
       updateBooksGrid()
     })
 }
-
+*/
 const addBookDB = (newBook) => {
   db.collection('books').add(bookToDoc(newBook))
 }
@@ -348,7 +347,7 @@ const getBookIdDB = async (title) => {
 }
 
 // Utils
-
+/*
 const docsToBooks = (docs) => {
   return docs.map((doc) => {
     return new Book(
@@ -374,3 +373,5 @@ const bookToDoc = (book) => {
     createdAt: firebase.firestore.FieldValue.serverTimestamp(),
   }
 }
+
+*/
