@@ -27,6 +27,7 @@ h1, div {
 *** END OF OLD VERSION */
 
 /* *** START OF NEW VERSION HERE, ADJUST AS NEEDED! *** */
+
 :root {
     --white: #fffbfb;
     --grey: #f0eef1;
@@ -63,7 +64,7 @@ h1, div {
   body {
     background-color: var(--grey);
     color: var(--black);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
     font-weight: 500;
     word-wrap: break-word;

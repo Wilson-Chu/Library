@@ -320,6 +320,7 @@ const setupRealTimeListener = () => {
     })
 }
 */
+
 const addBookDB = (newBook) => {
   db.collection('books').add(bookToDoc(newBook))
 }
@@ -347,7 +348,7 @@ const getBookIdDB = async (title) => {
 }
 
 // Utils
-/*
+
 const docsToBooks = (docs) => {
   return docs.map((doc) => {
     return new Book(
@@ -373,5 +374,3 @@ const bookToDoc = (book) => {
     createdAt: firebase.firestore.FieldValue.serverTimestamp(),
   }
 }
-
-*/
