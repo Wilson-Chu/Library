@@ -4,6 +4,7 @@ An app to easily track down books that have been read, or will be read. Uses Jav
 
 Future improvements: 
 -proper client side form validation
+-overflow handing for each card (CSS - https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
 -expand functionality to also track movies, TV shows, video games, subscription services {show bill dates & prices if logged in} (Netflix, Spotify, Crave, etc.) [long-term, maybe too ambitious for now...]
 -add thumbnails to showcase each piece of content added (openlibrary/Cover API for this?)
 -personal rating system for content vs. aggregrated reviews like Google Reviews/IMBD/Rotten Tomatoes/Metacritic/etc. (APIs???)
