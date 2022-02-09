@@ -18,9 +18,13 @@
   </div>
   <div id="popUp">
     <form id='form' action='/library.js' method='post'>
-      <span class="close">&times;</span>
-      <legend>Add New Book</legend>
+      <div class="modalTitle">
+        <div></div> <!-- Empty div used to evenly space modal title -->
+        <legend>Add New Book</legend>
+        <span id="close">&times;</span>
+      </div>
       <div id='textInput'>
+        <!--
         <p><input type='text' id='title' name='title' placeholder='Title' required></p>
         <p><input type='text' id='author' name='author' placeholder='Author' required></p>
         <p><input type='number' id='pages' name='pages' placeholder='Pages' required min='0'></p>
@@ -29,6 +33,15 @@
         <p><label>Read: </label><input type='checkbox' id='read' name='read' value='yes'></p>
       </div>
       <button type='submit' form='form' id='addBtn'>Add</button>
+        -->
+
+        <input type='text' id='title' name='title' placeholder='Title' required>
+        <input type='text' id='author' name='author' placeholder='Author' required>
+        <input type='number' id='pages' name='pages' placeholder='Pages' required min='0'>
+        <label>Read: <input type='checkbox' id='read' name='read' value='yes'></label>
+        <button type='submit' form='form' id='addBtn'>Add</button>
+      </div>
+
     </form>
   </div>
   <div id='Library-container'></div>
