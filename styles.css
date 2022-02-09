@@ -73,11 +73,12 @@ h1 {
 
 
 
-/* Book and its contents */
-.book {
+/* Card and its contents */
+.bookCard {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: auto;
   border: 3px solid black;
   border-radius: 30px;
   height: 300px;
@@ -88,19 +89,23 @@ h1 {
 }
 
 .title {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  height: 40%;
+  overflow: auto;
 }
 
 .author {
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  height: 30%;
+  overflow: auto;
 }
 
 .pages {
-  font-size: 25px;
-  margin-bottom: 20px;
+  font-size: 15px;
+  margin-bottom: 15px;
 }
 
 button:focus {

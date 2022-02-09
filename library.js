@@ -73,7 +73,7 @@ function addBookToLibrary() {
 // Creates cards UI
 function render() {
   const display = document.getElementById('Library-container');
-  const books = document.querySelectorAll('.book');
+  const books = document.querySelectorAll('.bookCard');
   books.forEach(book => display.removeChild(book));
 
   for (let i = 0; i < myLibrary.length; i++) {
@@ -92,7 +92,7 @@ function createBook(item) {
   const readBtn = document.createElement('button');
 
 
-  bookDiv.classList.add('book');
+  bookDiv.classList.add('bookCard');
   bookDiv.setAttribute('id', myLibrary.indexOf(item));
 
   titleDiv.textContent = item.title;
