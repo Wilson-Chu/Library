@@ -91,7 +91,6 @@ function createBook(item) {
   const removeBtn = document.createElement('button');
   const readBtn = document.createElement('button');
 
-
   bookDiv.classList.add('bookCard');
   bookDiv.setAttribute('id', myLibrary.indexOf(item));
 
