@@ -28,12 +28,12 @@ h1, div {
 
 body {
   background-color: whitesmoke;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
   display: flex;
   justify-content: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 50px;
 }
 
@@ -69,9 +69,8 @@ h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /*justify-content: center;  use this if theres another div surrounding container*/
+  justify-content: center;
 }
-
 
 
 /* Card and its contents */
@@ -138,6 +137,10 @@ button:focus {
   margin-bottom: 20px;
   border-radius: 10px;
   border: solid 3px black;
+}
+
+#addBtn:hover, #removeBtn:hover, .readBtn:hover {
+  cursor: pointer;
 }
 
 /* Modal popup box  https://www.w3schools.com/howto/howto_css_modals.asp */
