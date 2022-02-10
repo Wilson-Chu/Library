@@ -1,42 +1,9 @@
-/*
-let myLibrary = [];
-
-// would closures be better here?
-function Book(title, author, numPages, read) {
-  // the constructor...
-  this.title = title;
-  this.author = author;
-  this.numPages = numPages;
-  this.read = read;
-}
-
-
-function addBookToLibrary(book) {
-  // do stuff here
-  myLibrary.push(book);
-}
-
-// getter function even necessary here? will need for each element...
-function getTitle(myLibArr) {
-  return myLibArr.title;
-}
-
-const book1 = new Book("The Hobbit", "J.R.R. Tolkien", 295, "not read yet");
-const book2 = new Book("Willy Wonka and the Chocolate Factory", "Roald Dahl", 227, "read");
-const book3 = new Book("Principles", "Ray Dalio", 555, "read");
-addBookToLibrary(book1);
-addBookToLibrary(book2);
-addBookToLibrary(book3);
-
-// are getters be necessary?
-for (let i = 0; i < myLibrary.length; i++) {
-  console.log(getTitle(myLibrary[i]));
-}
-*/
-
 //button event listeners for create new book, add new book to page, close popup
 const addBtn = document.querySelector('#addBtn');
 addBtn.addEventListener('click', addBookToLibrary);
+
+const rmvAllBtn = document.querySelector('#rmvAllBtn');
+rmvAllBtn.addEventListener('click', deleteAll);
 
 const newBookBtn = document.querySelector('#newBtn');
 newBookBtn.addEventListener('click', () => popUpForm.style.display = 'block');
@@ -60,7 +27,6 @@ let myLibrary = [];
 let newBook;
 
 function addBookToLibrary() {
-  //event.preventDefault();
   popUpForm.style.display = 'none';
 
   newBook = new Book(title, author, pages, read);
@@ -151,6 +117,13 @@ function restore() {
     myLibrary = objects;
     render();
   }
+}
+
+// Deletes all cards at once
+function deleteAll() {
+  myLibrary.splice(myLibrary[0], myLibrary.length);
+  setData()
+  render();
 }
 
 restore();
