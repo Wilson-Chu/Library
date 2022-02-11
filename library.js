@@ -3,7 +3,7 @@ const addBtn = document.querySelector('#addBtn');
 addBtn.addEventListener('click', addBookToLibrary);
 
 const rmvAllBtn = document.querySelector('#rmvAllBtn');
-rmvAllBtn.addEventListener('click', deleteAll);
+rmvAllBtn.addEventListener('click', removeAll);
 
 const newBookBtn = document.querySelector('#newBtn');
 newBookBtn.addEventListener('click', () => popUpForm.style.display = 'block');
@@ -120,7 +120,7 @@ function restore() {
 }
 
 // Deletes all cards at once
-function deleteAll() {
+function removeAll() {
   myLibrary.splice(myLibrary[0], myLibrary.length);
   setData()
   render();
