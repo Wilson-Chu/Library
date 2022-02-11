@@ -12,7 +12,7 @@ const popUpForm = document.getElementById('popUp');
 const closePopUp = document.getElementsByTagName('span')[0];
 closePopUp.addEventListener('click', () => popUpForm.style.display = 'none');
 
-//Book Constructor
+// Creating a Book object
 class Book {
   constructor(title, author, pages, read) {
     this.title = form.title.value;
@@ -22,7 +22,7 @@ class Book {
   }
 }
 
-//creates book from Book Constructor, adds to library
+// Creates library array where all Book objects are stored
 let myLibrary = [];
 let newBook;
 
