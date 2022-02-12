@@ -54,8 +54,8 @@ function createBook(item) {
   const titleDiv = document.createElement('div');
   const authDiv = document.createElement('div');
   const pageDiv = document.createElement('div');
-  const removeBtn = document.createElement('button');
   const readBtn = document.createElement('button');
+  const removeBtn = document.createElement('button');
 
   bookDiv.classList.add('bookCard');
   bookDiv.setAttribute('id', myLibrary.indexOf(item));
@@ -112,15 +112,15 @@ function restore() {
   if (!localStorage.myLibrary) {
     render();
   } else {
-    let objects = localStorage.getItem('myLibrary') // gets information from local storage to use in below loop to create DOM/display
-    //objects = JSON.parse(objects);
-    //myLibrary = objects; /* these 2 lines are replaced with the one below, kept for clarity */
+    let objects = localStorage.getItem('myLibrary') // Gets info from local storage to create DOM/display
+    //objects = JSON.parse(objects); ***
+    //myLibrary = objects; *** /* these 2 lines are replaced with the one below, kept for clarity */
     myLibrary = JSON.parse(objects);
     render();
   }
 }
 
-// Deletes all cards at once
+// Deletes all cards at once and clears array
 function removeAll() {
   myLibrary.splice(myLibrary[0], myLibrary.length);
   setData()

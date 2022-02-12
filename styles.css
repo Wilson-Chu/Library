@@ -8,7 +8,7 @@ h1 {
   font-size: 50px;
 }
 
-.topBtn-Container {
+.topBtn-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,14 +130,14 @@ button:focus {
   cursor: pointer;
 }
 
-/* Modal popup box  https://www.w3schools.com/howto/howto_css_modals.asp */
+/* Modal popup box reference: https://www.w3schools.com/howto/howto_css_modals.asp */
 
 .modalTitle {
   display: flex;
   justify-content: space-evenly;
 }
 
-/* The Modal (background) */
+/* The Modal form (background) */
 input#title, input#author, input#pages {
   height: 25px;
   width: 80%;
@@ -182,11 +182,6 @@ input[type=checkbox] {
   gap: 15px;
   padding-top: 20px;
   font-size: 25px;
-}
-
-#textInput p {
-  margin: 0;
-  padding: 0;
 }
 
 /* The Close Button */
