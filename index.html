@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset='UTF-8'>
   <title>My Library</title>
-  <meta name="viewport" content="initial-scale=1, width=device-width" />
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-  <link rel="stylesheet" href="styles.css" />
-  <script src="library.js" defer></script>
+  <meta name='viewport' content='initial-scale=1, width=device-width' />
+  <link rel='shortcut icon' href='favicon.ico'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap' />
+  <link rel='stylesheet' href='styles.css' />
+  <script src='library.js' defer></script>
 </head>
 
 <body>
   <h1>My Library</h1>
-  <div id='newBtn-Container'>
-    <button id="newBtn"> + Add New Book</button>
-    <button id="rmvAllBtn"> - Remove All Books</button>
+  <div class='topBtn-Container'>
+    <button id='newBookBtn'> + Add New Book</button>
+    <button id='rmvAllBtn'> - Remove All Books</button>
   </div>
-  <div id="popUp">
+  <div id='modal'>
     <form id='form' action='/library.js' method='post'>
-      <div class="modalTitle">
+      <div class='modalTitle'>
         <div></div> <!-- Empty div used to evenly space modal title -->
         <legend>Add New Book</legend>
-        <span id="close">&times;</span>
+        <span id='close'>&times;</span> <!-- The 'X' button to close modal -->
       </div>
       <div id='textInput'>
         <input type='text' id='title' name='title' placeholder='Title' required>

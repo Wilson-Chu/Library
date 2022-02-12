@@ -1,14 +1,14 @@
-//button event listeners for create new book, add new book to page, close popup
-const addBtn = document.querySelector('#addBtn');
-addBtn.addEventListener('click', addBookToLibrary);
+/* Event listeners to create new book card, add card, remove all cards, or close modal */
+const newBookBtn = document.querySelector('#newBookBtn');
+newBookBtn.addEventListener('click', () => popUpForm.style.display = 'block');
 
 const rmvAllBtn = document.querySelector('#rmvAllBtn');
 rmvAllBtn.addEventListener('click', removeAll);
 
-const newBookBtn = document.querySelector('#newBtn');
-newBookBtn.addEventListener('click', () => popUpForm.style.display = 'block');
+const addBtn = document.querySelector('#addBtn');
+addBtn.addEventListener('click', addBookToLibrary);
 
-const popUpForm = document.getElementById('popUp');
+const popUpForm = document.getElementById('modal');
 const closePopUp = document.getElementsByTagName('span')[0];
 closePopUp.addEventListener('click', () => popUpForm.style.display = 'none');
 
@@ -31,7 +31,7 @@ function addBookToLibrary() {
 
   newBook = new Book(title, author, pages, read);
   myLibrary.push(newBook);
-  setData();  //saves updated array in local storage
+  setData();  // Saves updated array into local storage
   render();
   form.reset();
 }
@@ -47,7 +47,7 @@ function render() {
   }
 }
 
-// Creates Book DOM elements, to use in render();
+// Creates Book Card DOM elements, to use in render()
 function createBook(item) {
   const library = document.querySelector('#Library-container');
   const bookDiv = document.createElement('div');
@@ -94,7 +94,7 @@ function createBook(item) {
     render();
   });
 
-  //add toggle ability to each book 'read' button on click
+  // Clicking toggles "Read/Not Read" button on each card
   readBtn.addEventListener('click', () => {
     item.read = !item.read;
     setData();
@@ -102,19 +102,20 @@ function createBook(item) {
   });
 };
 
-// setting Library to be stored in local storage
+// Library to be stored in user's local storage
 function setData() {
-  localStorage.setItem(`myLibrary`, JSON.stringify(myLibrary));
+  localStorage.setItem('myLibrary', JSON.stringify(myLibrary));
 }
 
-//pulls books from local storage when page is refreshed
+// Populates Library from local storage after page is reloaded
 function restore() {
   if (!localStorage.myLibrary) {
     render();
   } else {
     let objects = localStorage.getItem('myLibrary') // gets information from local storage to use in below loop to create DOM/display
-    objects = JSON.parse(objects);
-    myLibrary = objects;
+    //objects = JSON.parse(objects);
+    //myLibrary = objects; /* these 2 lines are replaced with the one below, kept for clarity */
+    myLibrary = JSON.parse(objects);
     render();
   }
 }

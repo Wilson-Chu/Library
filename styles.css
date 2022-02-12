@@ -8,7 +8,7 @@ h1 {
   font-size: 50px;
 }
 
-#newBtn-Container {
+.topBtn-Container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@ h1 {
   margin-bottom: 30px;
 }
 
-#newBtn {
+#newBookBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@ h1 {
   transition: 0.2s;
 }
 
-#newBtn:hover {
+#newBookBtn:hover {
   background-color: rgb(66, 163, 66);
   font-weight: bold;
   cursor: pointer;
@@ -106,31 +106,24 @@ button:focus {
   outline: 0;
 }
 
-.readBtn {
+.readBtn, #removeBtn, #addBtn {
   font-size: 20px;
   height: 35px;
   width: 110px;
-  margin-bottom: 20px;
   border-radius: 10px;
   border: solid 3px black;
 }
 
+.readBtn {
+  margin-bottom: 20px;
+}
+
 #removeBtn {
-  font-size: 20px;
-  height: 35px;
-  width: 110px;
-  border-radius: 10px;
-  border: solid 3px black;
   background-color: #d7d9da;
 }
 
 #addBtn {
-  font-size: 20px;
-  height: 35px;
-  width: 110px;
   margin-bottom: 20px;
-  border-radius: 10px;
-  border: solid 3px black;
 }
 
 #addBtn:hover, #removeBtn:hover, .readBtn:hover {
@@ -156,7 +149,7 @@ input[type=checkbox] {
   transform: scale(1.8);
 }
 
-#popUp {
+#modal {
   display: none;
   position: fixed;
   z-index: 1;
