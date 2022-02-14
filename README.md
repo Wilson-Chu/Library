@@ -3,7 +3,7 @@ My reading list tracker, idea from The Odin Project.
 An app to easily track down books that have been read, or will be read. Uses JavaScript, and will eventually incorporate React.js and a design UI (TBD - possiblly Material UI) in the future.
 
 Future improvements: 
--proper client-side form validation
+-proper client side form validation (stops user from progressing until required fields completed)
 
 Long-term future improvements:
 -add OAuth for account with local storage option (learn how to? Google Sign-In vs. something else? Firebase/Netlify backend probably - will learn how very soon)
