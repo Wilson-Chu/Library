@@ -6,7 +6,7 @@ Future improvements:
 -proper client side form validation (stops user from progressing until required fields completed)
 
 Long-term future improvements:
--add OAuth for account with local storage option (learn how to? Google Sign-In vs. something else? Firebase/Netlify backend probably - will learn how very soon)
+-add OAuth for account with local storage option (e.g. BaaS, Google OAuth, Auth0, etc.)
 -expand functionality to also track movies, TV shows, video games, subscription services {show bill dates & prices if logged in} (Netflix, Spotify, Crave, etc.)
 -add thumbnails to showcase each piece of content added (openlibrary/Cover API for this?)
 -personal rating system for content vs. aggregrated reviews like Google Reviews/IMBD/Rotten Tomatoes/Metacritic/etc. (APIs???)
